@@ -98,7 +98,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 model.fit(xt, yt, batch_size=380, validation_data=(xtt, ytt), epochs=100, use_multiprocessing=True)
 
 test_loss, test_acc = model.evaluate(xtt, ytt, batch_size=200, use_multiprocessing=True)
-model.save("santand1.h5")
+model.save("santandar.h5")
 
 print('Test accuracy:', test_acc)
 print("parameter:" ,str(i), str(j), str(k))
